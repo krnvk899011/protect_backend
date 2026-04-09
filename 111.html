@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercedes-AMG Petronas Formula One Team 2025</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="222.css">
+</head>
+<body>
+    
+    <header class="header">
+        <video class="header-video" autoplay muted loop>
+            <source src="video.MP4" type="video/mp4">
+        </video>
+        <div class="header-overlay"></div>
+        
+        <nav class="nav">
+            <div class="logo">MERCEDES-AMG F1</div>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="#">Главная</a></li>
+                <li class="dropdown-parent">
+                    <a href="#team" class="dropdown-toggle">Команда ▼</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#history">История команды</a></li>
+                        <li><a href="#leader">Руководитель команды</a></li>
+                        <li><a href="#drivers">Пилоты</a></li>
+                        <li><a href="#technical">Технический состав</a></li>
+                        <li><a href="#photos">Фото команды</a></li>
+                        <li><a href="#videos">Видео команды</a></li>
+                    </ul>
+                </li>
+                <li><a href="#car">Болид W16</a></li>
+                <li><a href="#calendar">Календарь</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#partners">Партнеры</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+
+        <div class="hero">
+            <h1>MERCEDES-AMG PETRONAS F1 TEAM</h1>
+            <p>Формула 1 - Сезон 2025</p>
+            <p>Инновации. Технологии.</p>
+            <a href="#contact" class="btn">Связаться с командой</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Бегущая строка спонсоров -->
+        <div class="marquee-section">
+            <div class="marquee-content">
+                <span><i class="fab fa-amazon"></i> PETRONAS</span>
+                <span><i class="fas fa-microchip"></i> AMD</span>
+                <span><i class="fas fa-shield-alt"></i> CROWDSTRIKE</span>
+                <span><i class="fas fa-charging-station"></i> INEOS</span>
+                <span><i class="fas fa-chart-line"></i> UBS</span>
+                <span><i class="fas fa-eye"></i> TeamViewer</span>
+                <span><i class="fas fa-dragon"></i> Snapdragon</span>
+                <span><i class="fas fa-magic"></i> ignify</span>
+                <span><i class="fas fa-laptop-code"></i> HPE</span>
+                <span><i class="fas fa-clock"></i> IWC</span>
+            </div>
+            <div class="marquee-content" aria-hidden="true">
+                <span><i class="fab fa-amazon"></i> PETRONAS</span>
+                <span><i class="fas fa-microchip"></i> AMD</span>
+                <span><i class="fas fa-shield-alt"></i> CROWDSTRIKE</span>
+                <span><i class="fas fa-charging-station"></i> INEOS</span>
+                <span><i class="fas fa-chart-line"></i> UBS</span>
+                <span><i class="fas fa-eye"></i> TeamViewer</span>
+                <span><i class="fas fa-dragon"></i> Snapdragon</span>
+                <span><i class="fas fa-magic"></i> ignify</span>
+                <span><i class="fas fa-laptop-code"></i> HPE</span>
+                <span><i class="fas fa-clock"></i> IWC</span>
+            </div>
+        </div>
+
+        <section id="stats">
+            <div class="container">
+                <h2 class="section-title">Достижения команды</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">8</div>
+                        <div class="stat-text">Кубков конструкторов<br><small>2014-2021</small></div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">9</div>
+                        <div class="stat-text">Чемпионских титулов пилотов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">135</div>
+                        <div class="stat-text">Победы в Гран-при</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">147</div>
+                        <div class="stat-text">Поула</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Таймер до следующей гонки -->
+        <div class="container">
+            <div class="next-race-timer">
+                <h3><i class="fas fa-hourglass-half"></i> Следующий Гран-при: Австралия</h3>
+                <div class="timer-digits" id="raceTimer">
+                    <div class="timer-block"><div class="timer-number" id="days">00</div><div class="timer-label">Дней</div></div>
+                    <div class="timer-block"><div class="timer-number" id="hours">00</div><div class="timer-label">Часов</div></div>
+                    <div class="timer-block"><div class="timer-number" id="minutes">00</div><div class="timer-label">Минут</div></div>
+                    <div class="timer-block"><div class="timer-number" id="seconds">00</div><div class="timer-label">Секунд</div></div>
+                </div>
+                <p>Трасса Майами, 3 мая 2026, 23:00 UTC</p>
+            </div>
+        </div>
+
+        <section id="history">
+            <div class="container">
+                <h2 class="section-title">История команды</h2>
+                <div class="history-content">
+                    <div class="history-text" id="historyShort">
+                        <p>История Mercedes в Ф1 богата и состоит из нескольких эпох...</p>
+                        <button class="btn show-more-btn" onclick="showFullHistory()">Показать всю информацию</button>
+                    </div>
+                    <div class="history-text full-history" id="historyFull" style="display: none;">
+                        <p>История Mercedes в Ф1 богата и состоит из нескольких эпох:</p>
+                        <div class="history-era">
+                            <h3>Зарождение и первые успехи (1950-е годы)</h3>
+                            <p>Mercedes дебютировал в Формуле-1 еще в 1954 году. Легендарные пилоты Хуан-Мануэль Фанхио и Стирлинг Мосс на "Серебряных стрелах" доминировали в гонках. Фанхио принес команде два чемпионских титула (1954, 1955).</p>
+                        </div>
+                        <div class="history-era">
+                            <h3>Возвращение в качестве поставщика двигателей (1990-2000-е)</h3>
+                            <p>Mercedes вернулся в Ф1 в 1990-х как партнер Sauber, затем стал моторным поставщиком McLaren. Три чемпионских титула с Микой Хаккиненом (1998, 1999) и Кими Райкконеном (2005).</p>
+                        </div>
+                        <div class="history-era">
+                            <h3>Собственная команда (с 2010 года)</h3>
+                            <p>Компания выкупила чемпионскую команду Brawn GP. С введением гибридных двигателей в 2014 году началась эра доминирования: 8 Кубков конструкторов подряд.</p>
+                        </div>
+                        <button class="btn show-less-btn" onclick="hideFullHistory()">Скрыть информацию</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- НОВЫЙ РАЗДЕЛ: FAQ -->
+        <section id="faq">
+            <div class="container">
+                <h2 class="section-title"><i class="fas fa-question-circle"></i> Часто задаваемые вопросы</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">Как стать пилотом академии Mercedes? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Mercedes-AMG F1 проводит ежегодные отборы через программу Junior Programme. Необходимо иметь выдающиеся результаты в младших формулах (F2, F3) и пройти многоэтапные испытания.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Где производятся двигатели Mercedes F1? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Все силовые установки производятся на заводе Mercedes-AMG High Performance Powertrains в Бриксуорте, Великобритания.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Можно ли посетить фабрику команды? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Да, проводятся экскурсии для групп по предварительной записи. Подробности на официальном сайте команды.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Как купить мерч Mercedes-AMG F1? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Официальный магазин доступен на сайте команды. Также продукция представлена на Grand Prix этапах в фан-зоне.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Сколько человек работает в команде? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Более 1000 высококвалифицированных специалистов: инженеры, механики, аэродинамики, стратеги и административный персонал.</div>
+                    </div>
+                    <div class="faq-item">
+                        <div class="faq-question">Почему цвет команды — бирюзовый? <i class="fas fa-chevron-down"></i></div>
+                        <div class="faq-answer">Бирюзовый — цвет титульного партнера Petronas. Серебристый оттенок — дань истории "Серебряных стрел".</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="leader">
+            <div class="container">
+                <h2 class="section-title">Руководитель команды</h2>
+                <div class="leader-content">
+                    <div class="leader-photo">
+                        <img src="Toto1.JPG" alt="Тото Вольфф">
+                    </div>
+                    <div class="leader-info">
+                        <h3>Тото Вольфф</h3>
+                        <div class="leader-grid">
+                            <div class="leader-card">
+                                <div class="leader-icon"><i class="fas fa-flag-checkered"></i></div>
+                                <h4>Бывший гонщик</h4>
+                                <p>Участвовал в Формуле-Форд и 24 часах Нюрбургринга. Его гоночный опыт помогает понимать потребности пилотов.</p>
+                            </div>
+                            <div class="leader-card">
+                                <div class="leader-icon"><i class="fas fa-chart-line"></i></div>
+                                <h4>Инвестор команды</h4>
+                                <p>В 2013 году приобрел долю в команде, став одним из основных акционеров. Стратегические инвестиции помогли достичь успеха.</p>
+                            </div>
+                            <div class="leader-card">
+                                <div class="leader-icon"><i class="fas fa-trophy"></i></div>
+                                <h4>Руководитель команды</h4>
+                                <p>С 2013 года — руководитель команды и генеральный директор. Под его руководством Mercedes выиграл 8 Кубков конструкторов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="drivers">
+            <div class="container">
+                <h2 class="section-title">Наши пилоты 2026</h2>
+                <div class="drivers-grid">
+                    <div class="driver-card">
+                        <div class="driver-image">
+                            <img src="kimi0.jpg" alt="Андреа Кими Антонелли">
+                        </div>
+                        <div class="driver-info">
+                            <h3 class="driver-name">Андреа Кими Антонелли</h3>
+                            <p>Молодой талант</p>
+                            <p>№12</p>
+                            <div class="driver-stats">
+                                <span>Побед: 2</span>
+                                <span>Поулов: 1</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="driver-card">
+                        <div class="driver-image">
+                            <img src="russel0.jpg" alt="Джордж Расселл">
+                        </div>
+                        <div class="driver-info">
+                            <h3 class="driver-name">Джордж Расселл</h3>
+                            <p>Старый талант</p>
+                            <p>№63</p>
+                            <div class="driver-stats">
+                                <span>Побед: 1</span>
+                                <span>Поулов: 2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="car">
+            <div class="container">
+                <h2 class="section-title">Болид W16</h2>
+                <div class="car-content">
+                    <div class="car-photo">
+                        <img src="Болид.JPG" alt="Mercedes-AMG W16 - Болид 2026 года">
+                    </div>
+                    <div class="car-info">
+                        <p>Mercedes-AMG W16 представляет собой вершину инженерной мысли и технологических инноваций в Формуле 1. Этот болид был разработан с учетом новых технических регламентов 2026 года.</p>
+                        <p>Аэродинамика W16 была полностью переработана для повышения эффективности и стабильности. Новые передние антикрылья и диффузоры обеспечивают лучшее управление воздушными потоками.</p>
+                        <p>Силовая установка W16 - гибридный двигатель Mercedes-AMG F1 M16 мощностью свыше 1000 лошадиных сил с беспрецедентной топливной эффективностью.</p>
+                        <p>Шасси изготовлено из углеродного волокна последнего поколения. Окраска сохранила серебристые тона с акцентами бирюзового цвета Petronas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="calendar">
+            <div class="container">
+                <h2 class="section-title">Календарь Гран-при 2026</h2>
+                <div class="calendar-content">
+                    <div class="calendar-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>№</th><th>Гран-при</th><th>Трасса</th><th>Дата</th><th>Кими</th><th>Джордж</th><th>Очки</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>1</td><td>Австралия</td><td>Мельбрун</td><td>8 марта</td><td class="position-2">2</td><td class="position-1">1</td><td>43</td></tr>
+                                <tr><td>2</td><td>Китай</td><td>Шанхай</td><td>15 марта</td><td class="position-1">1</td><td class="position-2">2</td><td>55</td></tr>
+                                <tr><td>3</td><td>Япония</td><td>Сузука</td><td>29 апреля</td><td class="position-1">1</td><td class="position-4">4</td><td>47</td></tr>
+                                <tr><td>4</td><td>США</td><td>Майами</td><td>3 мая</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>5</td><td>Канада</td><td>Монреаль</td><td>24 мая</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>6</td><td>Монако</td><td>Монте-Карло</td><td>7 июня</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>7</td><td>Испания</td><td>Барселона</td><td>14 июня</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>8</td><td>Австрия</td><td>Шпильберг</td><td>28 июня</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>9</td><td>Великобритания</td><td>Сильверстоун</td><td>5 июля</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>10</td><td>Бельгия</td><td>Франкоршам</td><td>19 июля</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>11</td><td>Венгрия</td><td>Будапешт</td><td>26 июля</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>12</td><td>Нидерланды</td><td>Зандворт</td><td>23 августа</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>13</td><td>Италия</td><td>Монца</td><td>6 сентября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>14</td><td>Испания</td><td>Барселона</td><td>13 сентября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>15</td><td>Азербайджан</td><td>Баку</td><td>27 сентября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>16</td><td>Сингапур</td><td>Сингапур</td><td>11 октября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>17</td><td>США</td><td>Остин</td><td>25 октября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>18</td><td>Мексика</td><td>Мехико</td><td>1 ноября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>19</td><td>Бразилия</td><td>Сан-Паулу</td><td>8 ноября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>20</td><td>Лас-Вегас</td><td>Лас-Вегас</td><td>21 ноября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>21</td><td>Катар</td><td>Лусаил</td><td>29 ноября</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                                <tr><td>22</td><td>Абу-Даби</td><td>Яс Марина</td><td>6 декабря</td><td class="position-0"></td><td class="position-0"></td><td></td></tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="total-row">
+                                    <td colspan="4">Итого за сезон</td>
+                                    <td class="total-points">72 очков</td>
+                                    <td class="total-points">63 очков</td>
+                                    <td class="total-points">135 очков</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="calendar-summary">
+                        <div class="summary-card">
+                            <h3>Кими</h3>
+                            <p><strong>Побед:</strong> 2</p>
+                            <p><strong>Подиумов:</strong> 3</p>
+                            <p><strong>Поулов:</strong> 1</p>
+                            <p><strong>Всего очков:</strong> 72</p>
+                            <p><strong>Позиция:</strong> 1 место</p>
+                        </div>
+                        <div class="summary-card">
+                            <h3>Джордж</h3>
+                            <p><strong>Побед:</strong> 1</p>
+                            <p><strong>Подиумов:</strong> 2</p>
+                            <p><strong>Поулов:</strong> 2</p>
+                            <p><strong>Всего очков:</strong> 63</p>
+                            <p><strong>Позиция:</strong> 2 место</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="technical">
+            <div class="container">
+                <h2 class="section-title">Технический состав</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-wind"></i></div>
+                        <h3>Аэродинамика</h3>
+                        <p>Передовые исследования в аэродинамической трубе и CFD-моделирование</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-microchip"></i></div>
+                        <h3>Силовая установка</h3>
+                        <p>Мощный и эффективный гибридный двигатель Mercedes-AMG</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>Анализ данных</h3>
+                        <p>Реальное время обработки телеметрии и стратегическое планирование</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+                        <h3>Разработка шасси</h3>
+                        <p>Инновационные композитные материалы и конструкции</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="partners">
+            <div class="container">
+                <h2 class="section-title">Партнеры и Акционеры</h2>
+                <div class="partners-content">
+                    <div class="partners-grid">
+                        <div class="partner-card">
+                            <div class="partner-photo">
+                                <img src="Mercedes.JPG" alt="Mercedes-Benz">
+                            </div>
+                            <h3>Mercedes-Benz Group AG</h3>
+                            <p><strong>Тип:</strong> Основной акционер</p>
+                            <p><strong>Доля:</strong> Контрольный пакет акций</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-photo">
+                                <img src="Тото2.JPG" alt="Тото Вольфф">
+                            </div>
+                            <h3>Тото Вольфф</h3>
+                            <p><strong>Тип:</strong> Совладелец</p>
+                            <p><strong>Доля:</strong> 33% акций команды</p>
+                        </div>
+                        <div class="partner-card">
+                            <div class="partner-photo">
+                                <img src="Ineos.JPG" alt="INEOS">
+                            </div>
+                            <h3>INEOS</h3>
+                            <p><strong>Тип:</strong> Совладелец</p>
+                            <p><strong>Доля:</strong> 33% акций команды</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="photos">
+            <div class="container">
+                <h2 class="section-title">Фото команды</h2>
+                <div class="gallery-content">
+                    <div class="gallery-container">
+                        <div class="gallery-track" id="photoGallery"></div>
+                        <button class="gallery-btn prev-btn" id="prevPhotoBtn">‹</button>
+                        <button class="gallery-btn next-btn" id="nextPhotoBtn">›</button>
+                    </div>
+                    <div class="gallery-thumbnails" id="photoThumbnails"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="videos">
+            <div class="container">
+                <h2 class="section-title">Видео команды</h2>
+                <div class="gallery-content">
+                    <div class="gallery-container">
+                        <div class="gallery-track" id="videoGallery"></div>
+                        <button class="gallery-btn prev-btn" id="prevVideoBtn">‹</button>
+                        <button class="gallery-btn next-btn" id="nextVideoBtn">›</button>
+                    </div>
+                    <div class="gallery-thumbnails" id="videoThumbnails"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2 class="section-title">Свяжитесь с командой</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Только буквы русского или английского алфавита">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@mail.ru">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required placeholder="11 цифр, например: 79123456789" pattern="[0-9]{11}" maxlength="11">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" required placeholder="Расскажите о вашем предложении или вопросе..."></textarea>
+                    </div>
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree" class="checkbox-label">
+                            Я согласен(на) с <a href="/privacy-policy" target="_blank">обработкой персональных данных</a>
+                        </label>
+                    </div>
+                    <div class="form-errors" id="formErrors"></div>
+                    <button type="submit" class="btn">Отправить сообщение</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">MERCEDES-AMG PETRONAS FORMULA ONE TEAM</div>
+            <p>&copy; 2026 Mercedes-AMG Petronas Formula One Team. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="333.js"></script>
+</body>
+</html>
